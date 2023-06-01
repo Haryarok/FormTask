@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="test_form" method="post" target="_parent">
+    <div id="cotent">
+      <fieldset id="user_details">
+        <legend>User Details:</legend>
+        <div id="user_inputs">
+          <div id="first_name_div" class="user_details">
+            <label for="first_name_field">First Name:</label>
+            <input id="first_name_field" type="text" name="FirstName" /> 
+          </div>
+          <div id="last_name_div" class="user_details">
+            <label for="last_name_field">Last Name:</label>
+            <input id="last_name_field" type="text" name="LastName" /> 
+          </div>
+          <div id="email_div" class="user_details">
+            <label for="email_field">Email:</label>
+            <input id="email_field" type="email" name="Email" /> 
+          </div>
+          <div id="phone_number_div" class="user_details">
+            <label for="phone_number_field">Phone Number:</label>
+            <input id="phone_number_field" type="tel" name="PhoneNumber" pattern="/^\d+$/" title="Should be a phone number"/> 
+          </div>
+        </div>
+      </fieldset>
+      <fieldset id="additional_details_div">
+        <legend>Additional Details:</legend>
+        <div id="proffesion_div" class="user_details">
+          <label for="proffesion">Proffesion:</label>
+            <select id="proffesion">
+              <option value="">&nbsp&nbsp - Select - </option>
+              <option value="Engineer">Engineer</option>
+              <option value="Programmer">Programmer</option>
+              <option value="Teacher">Teacher</option>
+              <option value="Student">Student</option>
+            </select>
+        </div>
+        <div id="comments_div" class="user_details">
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="CommentBox" rows="4"></textarea> 
+        </div>
+      </fieldset>
+      <hr />
+      <div id="buttons">
+        <input type="reset" class="btns" form="test_form" value="reset form"/>
+        <input type="submit" class="btns" form="test_form" value="send"/>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
